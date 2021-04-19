@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let a = +prompt('nhap tham so 1');
+    let b = +prompt('nhap tham so 2');
+    function checkSum(x,y){
+        if ( x > y){
+            alert(x + 'lon hon' + y)
+        }else {
+           let total = x + y;
+            document.getElementById('demo').innerHTML = 'tong cua hai tham so la :' + total;
+        }
+    }
+    checkSum(a,b);
+</script>
+</body>
+</html>

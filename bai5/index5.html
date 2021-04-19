@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    let star = prompt('nhap ten ngoi sao');
+    let Star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe'];
+    let Constellation = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function checkStar() {
+        if (Star.indexOf(star) !== -1) {
+            let b = Constellation[Star.indexOf(star)];
+            console.log(b);
+            Star[Star.indexOf(star)] = b;
+            document.write(star + ' ' + 'ung voi chom sao :' + b);
+        } else {
+            document.write(star + 'khong co trong danh sach');
+        }
+    }
+
+    checkStar();
+</script>
+</body>
+</html>
